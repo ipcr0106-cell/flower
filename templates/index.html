@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>THE BLOOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html { height: 100%; margin: 0; font-family: 'serif'; background-color: #000; }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 배경을 조금 더 어둡게 처리하여 흰색 글씨가 잘 보이게 했습니다 */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* 사이트 이름 (흰색으로 변경) */
+        .hero-title { 
+            font-size: 5rem; 
+            letter-spacing: 20px; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            margin-bottom: 0;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.5); 
+        }
+        
+        /* 서브 타이틀 (흰색으로 변경) */
+        .hero-subtitle {
+            letter-spacing: 5px; 
+            color: #ffffff; 
+            margin-top: 10px;
+            text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+        }
+
+        /* 왼쪽 하단 위치 정보 (흰색으로 변경) */
+        .location-info {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            text-align: left;
+            color: #ffffff; /* 흰색으로 변경 */
+            font-size: 0.8rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            border-left: 1px solid #ffffff; /* 선 색상도 흰색으로 변경 */
+            padding-left: 20px;
+            text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+        }
+        .location-info b { 
+            display: block; 
+            color: #ffffff; 
+            margin-bottom: 5px; 
+            letter-spacing: 2px; 
+            font-weight: 700;
+        }
+
+        .btn-enter {
+            position: absolute; bottom: 80px;
+            padding: 15px 50px; background: rgba(255, 255, 255, 0.9); color: #000;
+            text-decoration: none; letter-spacing: 4px; transition: 0.3s;
+            border: none; font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .btn-enter:hover { background: #000; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="hero-title">The Bloom</h1>
+        <!-- 지도 긁어서 넣기 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.839937813516!2d127.05686522533719!3d37.51169312727184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca536e4738c97%3A0x336c7537649c9fe4!2z7L2U7JeR7Iqk!5e0!3m2!1sko!2skr!4v1768368912754!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="hero-subtitle">SEASONAL FLORAL DESIGN</p>
+        
+        <div class="location-info">
+            <b>STORE LOCATION</b>
+            서울특별시 강남구 선릉로 661 1층<br>
+            Blooms Studio, Gangnam<br>
+            <span style="color: rgba(255,255,255,0.8); font-size: 0.75rem;">
+                WEEKDAY : 11:00 - 19:00 / SAT : 10:00 - 16:00
+            </span>
+        </div>
+
+        <a href="/shop" class="btn-enter">SHOP COLLECTION</a>
+        <!-- 외부 영상 들고 오기
+         원하는 위치에 긁어온 코드를 넣기 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/th4GwXN_4o0?si=VpRxRvhMkvd4fHtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
+
+
+<!-- 이미지 파일 가져오기 img src="../static/sunflower.jpg" alt="" -->
+
+<!-- .. : templates에서 빠져나오기 -->
+
+ <!-- .:하위폴더  -->
